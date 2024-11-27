@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="../css/proj.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<style>
+    /* Navbar Styles */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #eeeeee;
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+/* Default style for the nav menu */
+#nav-menu {
+display: flex;
+}
+
+#nav-menu ul {
+display: flex;
+gap: 20px;
+}
+
+@media (max-width: 768px) {
+/* Initially hide the nav links */
+nav {
+    display: none;
+}
+
+/* Show the hamburger icon */
+.hamburger {
+    display: flex;
+    color: black;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.hamburger #menu-label {
+    margin-right: 1%;
+}
+
+/* Style for the nav menu in mobile view */
+#nav-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 0;
+    background-color: rgba(31, 18, 18, 0.83); /* Slightly transparent background */
+    width: 35%; /* Adjusted width */
+    text-align: right;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(253, 77, 77, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Active state: when menu is open */
+#nav-menu.active {
+    display: flex; /* Show the menu when active */
+}
+
+/* Style for the list items inside the nav menu */
+#nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: right;
+    list-style: none; /* Remove bullet points */
+}
+
+#nav-menu a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+/* Show the menu label only on mobile screens */
+.menu-label {
+    display: inline-block;
+}
+}
+
+@media (min-width: 769px) {
+/* Hide the hamburger menu and label on larger screens */
+.hamburger {
+    display: none;
+}
+
+.menu-label {
+    display: none;
+}
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- -------- Navbar Section -------- -->
+<div class="navbar">
+    <div class="logo">
+        <img src="../img/logo.png" alt="Logo Image">
+    </div>
+    <div class="hamburger">
+        <i class="fas fa-bars"></i>
+    </div>
+    <ul class="navlinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Html/product.html">Products</a></li>
+        <li><a href="../html/prokects.html">Projects</a></li>
+        <li><a href="../html/training.html">Training</a></li>
+        <li><a href="../html/about.html">About us</a></li>
+        <li><a href="../html/contact.html">Contact</a></li>
+        <li><ion-icon name="book"></ion-icon></li>
+        <li><ion-icon name="search"></ion-icon></li>
+    </ul>
+</div>
+
+
+
+    
+    <div class="slider">
+
+
+        <div class="list">
+
+            <div class="item">
+                <img src="../img/g/img1 (1).jpeg" alt="">
+
+                <div class="content">
+                    <div class="title">MAGIC SLIDER</div>
+                    <div class="type">FLOWER</div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../img/g/img1 (6).jpeg" alt="">
+
+                <div class="content">
+                    <div class="title">MAGIC SLIDER</div>
+                    <div class="type">NATURE</div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../img/g/img1 (15).jpeg" alt="">
+
+                <div class="content">
+                    <div class="title">MAGIC SLIDER</div>
+                    <div class="type">PLANT</div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="../img/g/img1 (12).jpeg" alt="">
+
+                <div class="content">
+                    <div class="title">MAGIC SLIDER</div>
+                    <div class="type">NATURE</div>
+                    <div class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti temporibus quis eum consequuntur voluptate quae doloribus distinctio. Possimus, sed recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, aut.
+                    </div>
+                    <div class="button">
+                        <button>SEE MORE</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="thumbnail">
+
+            <div class="item">
+                <img src="../img/g/img1 (1).jpeg" alt="">
+            </div>
+            <div class="item">
+                <img src="../img/g/img1 (6).jpeg" alt="">
+            </div>
+            <div class="item">
+                <img src="../img/g/img1 (15).jpeg" alt="">
+            </div>
+            <div class="item">
+                <img src="../img/g/img1 (16).jpeg" alt="">
+            </div>
+
+        </div>
+
+
+        <div class="nextPrevArrows">
+            <button class="prev"> < </button>
+            <button class="next"> > </button>
+        </div>
+
+
+    </div>
+
+    <section class="footer">
+        <div class="footer_container">
+            <div class=" col col_1">
+                <a href="../index.html"><img src="../img/logo.png" width="250px"></a>
+                <p><span>ADDRESS : </span>Shop 21D, Old Power Station Complex, Cnr Nobel & Armstrong street, Southern Industrial-Windhoek</p>
+                <p><span>TELEPHONE : </span>+264 81243277 / +264 852743277</p>
+                <p><span>EMAIL : </span>anolditofireengineer@gmail.com</p>
+            </div>
+            <div class="col col_2">
+                <h4 class="heading">MENU</h4>
+                <a href="../index.html"><P>Home</P></a>
+                <a href="../Html/about.html"><P>About</P></a>
+                <a href="../Html/product.html"><P>Products</P></a>
+                <a href="../Html/prokects.html"><P>Projects</P></a>
+                <a href="../Html/training.html"><P>Trainig</P></a>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/profile.php?id=61551619123411" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/anolditoengineers/profilecard/?igsh=cWlkd3lsbnJxYXk4" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/0812949374" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+
+ 
+        </div>
+        <div class="footer_tagline">
+            <p class="tagline"> © 2024 Anoldito Engineers and Fire Services and Training Namibia cc </p>
+        </div>
+    </section>
+
+    <script src="../proj.js"></script>
+</body>
+</html>
