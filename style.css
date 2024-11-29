@@ -663,9 +663,7 @@ img {
         padding: 20px 0;
     }
 
-    .navlinks.active {
-        display: flex; /* Show the menu when active */
-    }
+
 
     .menu-toggle {
         display: block; /* Show the hamburger icon */
@@ -674,6 +672,31 @@ img {
     .navlinks li {
         margin: 10px 0; /* Spacing between menu items */
         text-align: center; /* Center align text */
+    }
+
+    #nav-menu {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        background-color: rgba(31, 18, 18, 0.83); /* Slightly transparent background */
+        width: 35%; /* Adjusted width */
+        text-align: right;
+        padding: 15px;
+        box-shadow: 0 2px 5px rgba(253, 77, 77, 0.1);
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Active state: when menu is open */
+    #nav-menu.active {
+        display: flex; /* Show the menu when active */
+        margin-left: 65%;
+    }
+
+        .section-title {
+        font-size: 24px; /* Smaller font size for mobile */
+        margin-bottom: 15px; /* Adjust space below the title */
     }
 }
 
@@ -693,12 +716,6 @@ img {
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 24px; /* Smaller font size for mobile */
-        margin-bottom: 15px; /* Adjust space below the title */
-    }
-}
 
 @media (max-width: 480px) {
     .section-title {
@@ -745,4 +762,157 @@ img {
 }
 
 /* Responsive adjustments for items */
+
+
+
+/* Additional Carousel Styles */
+.carousel {
+    position: relative;
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 0em;
+    color: #ff1e00;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-slide {
+    transition: transform 0.5s ease;
+}
+
+.slick-slide img {
+    max-width: 150%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.slick-dots {
+    bottom: -30px;
+}
+
+.slick-dots li button:before {
+    color: #ff0000;
+}
+
+.slick-slide {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.slick-active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.slick-prev,
+.slick-next {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eeeeee;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 200px;
+}
+/* Default style for the nav menu */
+#nav-menu {
+display: flex;
+}
+
+#nav-menu ul {
+display: flex;
+gap: 20px;
+}
+
+@media (max-width: 768px) {
+/* Initially hide the nav links */
+nav {
+display: none;
+}
+
+/* Show the hamburger icon */
+.hamburger {
+display: flex;
+color: black;
+font-size: 26px;
+cursor: pointer;
+}
+
+.hamburger #menu-label {
+margin-right: 1%;
+}
+
+/* Style for the nav menu in mobile view */
+#nav-menu {
+display: none; /* Hidden by default */
+flex-direction: column;
+position: absolute;
+top: 60px; /* Adjust based on header height */
+right: 0;
+background-color: rgba(31, 18, 18, 0.83); /* Slightly transparent background */
+width: 35%; /* Adjusted width */
+text-align: right;
+padding: 15px;
+z-index: 10;
+box-shadow: 0 2px 5px rgba(253, 77, 77, 0.1);
+transition: background-color 0.3s, color 0.3s;
+}
+
+/* Active state: when menu is open */
+#nav-menu.active {
+display: flex; /* Show the menu when active */
+}
+
+/* Style for the list items inside the nav menu */
+#nav-menu ul {
+display: flex;
+flex-direction: column;
+gap: 15px;
+text-align: right;
+list-style: none; /* Remove bullet points */
+}
+
+#nav-menu a {
+display: block;
+color: #ffffff;
+text-decoration: none;
+font-weight: bold;
+padding: 10px 0;
+}
+
+/* Show the menu label only on mobile screens */
+.menu-label {
+display: inline-block;
+}
+}
+
+@media (min-width: 769px) {
+/* Hide the hamburger menu and label on larger screens */
+.hamburger {
+display: none;
+}
+
+.menu-label {
+display: none;
+}
+}
+
 
