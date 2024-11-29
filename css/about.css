@@ -131,12 +131,21 @@ nav {
     color: #333;
     margin-bottom: 30px;
 }
-.about
-{
-    width: 840px;
-    margin-left: 25%;
-    margin-bottom: 5%;
+
+.about {
+    width: 90%; /* Use a percentage width for better responsiveness */
+    margin: 0 auto 20px; /* Center the section and add margin at the bottom */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Background color */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
+
+
+
+
+
 
 .about, .product {
     margin-bottom: 20px;
@@ -152,13 +161,16 @@ nav {
 }
 
 .about h3, .product h3 {
-    font-size: 20px;
-    color: #444;
+    font-size: 1.5em; /* Adjust font size for headings */
+    color: #444; /* Heading color */
+    margin-bottom: 10px;
 }
 
 .about p, .product p {
-    font-size: 16px;
-    color: #666;
+    font-size: 1em; /* Adjust paragraph font size */
+    color: #666; /* Text color */
+    line-height: 1.5; /* Improve readability with line height */
+    margin-bottom: 15px;
 }
 
 .service-button, .product-button {
@@ -334,4 +346,22 @@ hr {
             }
         }
 
+        @media (max-width: 768px) {
+            .about {
+                width: 95%; /* Use a wider width on mobile */
+                padding: 15px; /* Adjust padding */
+            }
         
+            .about h3 {
+                font-size: 1.4em; /* Slightly smaller headings on mobile */
+            }
+        
+            .about p {
+                font-size: 0.9em; /* Smaller paragraph text on mobile */
+            }
+        
+            .service-button {
+                width: 100%; /* Full-width button for better touch targets */
+                padding: 10px; /* Adjust padding */
+            }
+        }

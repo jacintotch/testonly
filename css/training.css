@@ -269,3 +269,73 @@
         padding: 8px 0;
     }
 }
+
+@media (max-width: 767px) {
+    .hero1 {
+        padding: 60px 15px; /* Reduced padding */
+    }
+
+    .hero1 h1 {
+        font-size: 1.8em; /* Smaller font size */
+    }
+
+    .hero1 p {
+        font-size: 1.2em; /* Smaller font size */
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 15px; /* Adjusted padding */
+    }
+
+    .courses, .testimonials, .schedule, .registration {
+        padding: 30px 15px; /* Reduced padding */
+    }
+
+    .courses h2, .testimonials h2, .schedule h2, .registration h2 {
+        font-size: 1.8em; /* Adjusted font size */
+    }
+
+    .course-grid {
+        flex-direction: column; /* Stack courses vertically */
+        align-items: center; /* Center align */
+    }
+
+    .course-card {
+        width: 90%; /* Make cards take more width */
+        margin: 10px 0; /* Add margin for spacing */
+    }
+
+    .course-card img {
+        height: auto; /* Make images responsive */
+        max-height: 200px; /* Limit max height */
+    }
+
+    .testimonial-grid {
+        flex-direction: column; /* Stack testimonials vertically */
+        align-items: center; /* Center align */
+    }
+
+    .testimonial {
+        width: 90%; /* Make testimonials take more width */
+    }
+
+    .schedule table {
+        font-size: 14px; /* Smaller font size for table */
+    }
+
+    .registration form {
+        padding: 15px; /* Adjust padding */
+    }
+
+    .registration input {
+        width: 100%; /* Full width inputs */
+        margin-bottom: 10px; /* Spacing between inputs */
+        padding: 10px; /* Padding for better touch targets */
+    }
+
+    .registration button {
+        width: 100%; /* Full width button */
+        padding: 10px; /* Padding for better touch targets */
+    }
+}
